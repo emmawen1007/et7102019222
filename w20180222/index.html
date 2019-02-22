@@ -7,12 +7,24 @@
     <title>Speed Drill</title>
 
     <!--AngularJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/angular-animate.min.js"></script>
+    <script src="js/vendor/angular-route.min.js"></script>
 
-     <!--Datatables.net-->
 
-     <!--Font Awesome-->
+    <!--Datatables.net -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/dt-1.10.18/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.18/datatables.min.js"></script>
 
+
+    <!--Font Awesome -->
+     <!-- Current Verson
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+     -->
+     <!-- The font Awesome code below is several revisions back.
+      https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
+    I discovered that it would work from an article on stack overflow.  all code should at some point be updated to relfect the last calling syntax for font awesome -->
+   <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
@@ -21,6 +33,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/footer.css">
+
   </head>
   <body>
     <!-- *Begin Nav -->
@@ -35,9 +48,14 @@
 
 
     <!-- *Begin Content -->
-     <!--*Begin Angular -->
-
-      <!--*End Angular -->
+     <!--*Begin AngularJS -->
+     <div>
+          <label>Name:</label>
+          <input type="text" ng-model="yourName" placeholder="Enter a name here">
+          <hr>
+          <h1>Hello {{yourName}}!</h1>
+    </div>
+      <!--*End AngularJS -->
     <!-- *End Content -->
 
 
